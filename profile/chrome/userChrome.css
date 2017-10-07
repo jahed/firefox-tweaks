@@ -1,0 +1,38 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/**
+ * Show only icons in the bookmarks toolbar.
+ **/
+#personal-bookmarks .bookmark-item .toolbarbutton-text {
+    display:none !important;
+}
+
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+    margin:0px auto 2px !important;
+    padding:0 !important;
+    height:16px !important;
+}
+
+/**
+ * Hide non-bookmark actions from the Bookmarks Menu.
+ **/
+#BMB_viewBookmarksSidebar,
+#BMB_bookmarksShowAllTop,
+#BMB_subscribeToPageMenuitem,
+#BMB_bookmarksToolbar,
+#BMB_unsortedBookmarks,
+#BMB_recentBookmarks,
+#BMB_recentBookmarks + .bookmark-item,
+#BMB_recentBookmarks + .bookmark-item + .bookmark-item,
+#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item,
+#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item,
+#BMB_recentBookmarks + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item + .bookmark-item,
+#BMB_bookmarksPopup > menuseparator:nth-of-type(1),
+#BMB_bookmarksPopup > menuseparator:nth-of-type(2),
+#BMB_bookmarksPopup > menuseparator:nth-of-type(3),
+#BMB_bookmarksPopup > menuseparator:nth-of-type(4),
+#BMB_bookmarksPopup > menuseparator:nth-of-type(5),
+#BMB_bookmarksPopup > menuseparator:nth-of-type(6)
+{
+    display:none !important;
+}
